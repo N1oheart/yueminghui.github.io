@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>title</title>
+<link href="css/global.css" rel="stylesheet" />
+<link href="css/article.css" rel="stylesheet" />
+<link href="css/survey.css" rel="stylesheet" />
+</head>
+
+<body class="bg1">
+	<!-- 页眉区header ，个人网页有五个大类，HOME ABOUT ME OPINION COLLECTION RESUME CONTECT-->
+	<!-- 这里是一个导航栏 -->
+<div class="header">
+	<div class="nav">
+		<a href="index.html">HOME</a>
+		<a href="about1.html">ABOUT ME</a>
+		<a href="opinion.html" class="on">OPINION COLLECTION</a>
+		<a href="resume.html">RESUME</a>
+		<a href="contact.html">CONTECT</a>
+	</div>
+</div>
+<!-- 页面主要内容 -->
+<!-- 本页面主要是一个意见建议收集页面，也有留言板的功能 -->
+<div class="main">	
+	<div class="content-design">
+		<div class="design-logo">
+			<img src="images/opinion.png" class="img5" style="width: 300px; height: 62px;">
+		</div>
+	</div>
+	<div class="survey-title">
+		<p style="font-size: 35px;">
+			<strong>Contact Form</strong>
+		</p><br />
+		<p style="font-size: 20px;">
+			Please fill all the texts in the fields
+		</p>
+		<p style="font-size: 15px;">(您的信息绝不会以任何形式进行泄漏)</p>
+	</div>
+	<form method="POST" style=" text-align: center; font-size: 20px;">
+		<!-- 这里使用form表单来提交数据 -->
+		<p style="position: relative; margin-top: 1px; margin-left: -45px;">Name：<input name="name" style="width: 400px;" type="text"  placeholder="你的昵称"></p>
+		<p style="position: relative; margin-top: 15px; margin-left: -46px;"> E-mail：<input name="email" style="width: 400px;" type="text" placeholder="联系方式" ></p>
+		<p style="position: relative; margin-top: 29px; margin-left: -72px;">Suggeest：<input name="email"  style="height: 100px; width: 400px;" placeholder="写下你想说的话"  type="text" ></p>
+		<p style="position: relative; margin-top: 43px; margin-left: -59px;"  >Subject： 
+		<select id="skills" name="skills">   
+			<!-- 这里是一个内容选择器，可以选择你想要的反馈的模块 -->
+			<option value="home">HOME</option>
+			<option value="aboutme">ABOUT ME</option>
+			<option value="opinion">OPINION COLLECTION</option>
+			<option value="video">RESUME</option>
+			<option value="contact">CONTACT</option>
+		</select><br><br><br>
+	    </p>
+	</form>
+	<!-- 最后是一个提交数据按钮 -->
+	<div style="text-align: center; position: relative; margin-top: -15px;">
+		<button class="submit" style="text-align: center;" type="submit" accesskey="l" onclick="javascript:document.limesurvey.move.value = 'movesubmit';"value="提交 " name="move2" id="movesubmitbtn" >提交 </button>
+    </div>
+</div>
+</body>
+</html>
